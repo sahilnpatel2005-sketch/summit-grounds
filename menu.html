@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Summit Grounds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo">Summit <span>Grounds</span></a>
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="about.html" onclick="closeNav()">Our Story</a></li>
+    <li><a href="menu.html" aria-current="page" onclick="closeNav()">Menu</a></li>
+    <li><a href="books.html" onclick="closeNav()">Books</a></li>
+    <li><a href="visit.html" onclick="closeNav()">Visit Us</a></li>
+  </ul>
+</nav>
+
+<main class="page-main">
+<section class="menu" id="menu">
+  <div class="container">
+    <span class="section-label">What We're Brewing</span>
+    <h2 class="section-title">From Our <em>Kitchen & Bar</em></h2>
+    <div class="divider"></div>
+
+    <div class="menu-tabs">
+      <button class="tab-btn active" onclick="showTab('espresso', this)">Espresso & Coffee</button>
+      <button class="tab-btn" onclick="showTab('tea', this)">Tea & Seasonal</button>
+      <button class="tab-btn" onclick="showTab('food', this)">Food & Pastries</button>
+    </div>
+
+    <div class="menu-panel active" id="espresso">
+      <div class="menu-card">
+        <h4>Summit Drip</h4>
+        <p>Our house small-batch blend — dark chocolate, toasted cedar, and a clean Rocky Mountain finish.</p>
+        <span class="menu-price">$3.50 / $4.25</span>
+      </div>
+      <div class="menu-card">
+        <h4>Elevation Espresso</h4>
+        <p>Double shot, pulled slow. Bright citrus notes on entry, long caramel finish.</p>
+        <span class="menu-price">$3.75</span>
+      </div>
+      <div class="menu-card">
+        <h4>Ridgeline Latte</h4>
+        <p>Espresso, steamed whole milk, a dusting of cinnamon. Our most-loved daily ritual.</p>
+        <span class="menu-price">$5.25 / $5.75</span>
+      </div>
+      <div class="menu-card">
+        <h4>Pinecone Cold Brew</h4>
+        <p>20-hour steep, strained over ice. Smooth, low-acid, and seriously dangerous to your afternoon.</p>
+        <span class="menu-price">$5.50</span>
+      </div>
+      <div class="menu-card ember">
+        <h4>Forest Fog</h4>
+        <p>Oat milk, espresso, a touch of local pine syrup, and steamed foam. The locals' secret.</p>
+        <span class="menu-price">$5.75</span>
+      </div>
+      <div class="menu-card pine">
+        <h4>Cortado del Valle</h4>
+        <p>Equal parts espresso and warm milk. Short, bold, honest.</p>
+        <span class="menu-price">$4.25</span>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="tea">
+      <div class="menu-card sky">
+        <h4>Alpine Chamomile</h4>
+        <p>Colorado-grown chamomile, wildflower honey, dried lavender. Hug in a mug.</p>
+        <span class="menu-price">$4.00</span>
+      </div>
+      <div class="menu-card sky">
+        <h4>Spruce Tip Chai</h4>
+        <p>Masala spice blend, local spruce tip extract, steamed milk. Seasonal and special.</p>
+        <span class="menu-price">$5.25</span>
+      </div>
+      <div class="menu-card ember">
+        <h4>Winter Matcha</h4>
+        <p>Ceremonial-grade matcha, oat milk, a drizzle of raw honey.</p>
+        <span class="menu-price">$5.50</span>
+      </div>
+      <div class="menu-card sky">
+        <h4>Snowmelt Lemonade</h4>
+        <p>Fresh-pressed lemon, mint, cane sugar, sparkling water. Cold and bright.</p>
+        <span class="menu-price">$4.25</span>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="food">
+      <div class="menu-card">
+        <h4>Morning Scone</h4>
+        <p>Baked daily — rotating flavors. Today: huckleberry & lemon zest.</p>
+        <span class="menu-price">$3.50</span>
+      </div>
+      <div class="menu-card sky">
+        <h4>Brown Butter Cardamom Roll</h4>
+        <p>Soft, pillowy, drizzled with vanilla glaze. Claire's recipe, unchanged since day one.</p>
+        <span class="menu-price">$4.25</span>
+      </div>
+      <div class="menu-card pine">
+        <h4>Avocado Toast, Mountain Style</h4>
+        <p>Sourdough from Breckenridge Bread Co., smashed avocado, everything spice, poached egg.</p>
+        <span class="menu-price">$9.50</span>
+      </div>
+      <div class="menu-card pine">
+        <h4>Peanut Butter Granola Jar</h4>
+        <p>House-made granola, Greek yogurt, local honey, fresh berries. Hiker fuel.</p>
+        <span class="menu-price">$7.00</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-logo">Summit <span>Grounds</span></div>
+  <div class="footer-tagline">Coffee & Books · Silverthorne, Colorado</div>
+  <div class="footer-links">
+    <a href="about.html">Our Story</a>
+    <a href="menu.html">Menu</a>
+    <a href="books.html">Books</a>
+    <a href="visit.html">Hours & Location</a>
+  </div>
+  <div class="footer-copy">© 2026 Summit Grounds — The Hartley Family. All rights reserved.</div>
+</footer>
+
+<script src="shared.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>

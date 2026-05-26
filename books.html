@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books — Summit Grounds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo">Summit <span>Grounds</span></a>
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="about.html" onclick="closeNav()">Our Story</a></li>
+    <li><a href="menu.html" onclick="closeNav()">Menu</a></li>
+    <li><a href="books.html" aria-current="page" onclick="closeNav()">Books</a></li>
+    <li><a href="visit.html" onclick="closeNav()">Visit Us</a></li>
+  </ul>
+</nav>
+
+<main class="page-main">
+<section class="books" id="books">
+  <div class="container">
+    <span class="section-label">The Nook</span>
+    <h2 class="section-title">A <em>Little Library</em> That Wanders</h2>
+    <div class="divider"></div>
+    <p class="books-intro">One wall of shelves, hand-picked by the whole family. Claire leans into literary fiction and poetry. Marcus can't stop buying trail memoirs. The twins are responsible for the graphic novels and the bizarre cryptozoology section that somehow keeps growing.</p>
+
+    <div class="shelf">
+      <div class="book" style="height:150px">
+        <div class="book-spine" style="background:linear-gradient(#5c3d1e,#3b2a1a)">Lonesome Dove</div>
+      </div>
+      <div class="book" style="height:130px">
+        <div class="book-spine" style="background:linear-gradient(#e07868,#c96a52)">Wild</div>
+      </div>
+      <div class="book" style="height:145px">
+        <div class="book-spine" style="background:linear-gradient(#e8b878,#e07868)">The Overstory</div>
+      </div>
+      <div class="book" style="height:120px">
+        <div class="book-spine" style="background:linear-gradient(#8a6948,#6b4c2e)">A Walk in the Woods</div>
+      </div>
+      <div class="book" style="height:165px">
+        <div class="book-spine" style="background:linear-gradient(#2d3b50,#1a2535)">Dune</div>
+      </div>
+      <div class="book" style="height:138px">
+        <div class="book-spine" style="background:linear-gradient(#7a4a2e,#5c3020)">Braiding Sweetgrass</div>
+      </div>
+      <div class="book" style="height:125px">
+        <div class="book-spine" style="background:linear-gradient(#4a5e3a,#334428)">On the Road</div>
+      </div>
+      <div class="book" style="height:155px">
+        <div class="book-spine" style="background:linear-gradient(#6a3a5a,#4a2540)">Where the Crawdads Sing</div>
+      </div>
+      <div class="book" style="height:132px">
+        <div class="book-spine" style="background:linear-gradient(#3a5a70,#254060)">Educated</div>
+      </div>
+      <div class="book" style="height:148px">
+        <div class="book-spine" style="background:linear-gradient(#8a7a3a,#6a5820)">Colorado's Wildflowers</div>
+      </div>
+      <div class="book" style="height:122px">
+        <div class="book-spine" style="background:linear-gradient(#5a3a6a,#3a2050)">Piranesi</div>
+      </div>
+      <div class="book" style="height:142px">
+        <div class="book-spine" style="background:linear-gradient(#4a6a4a,#2a4a2a)">Patagonia: Notes from a Small Planet</div>
+      </div>
+    </div>
+    <p class="books-note">Titles rotate constantly — we buy used, we trade, and every book has a story before you add yours.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-logo">Summit <span>Grounds</span></div>
+  <div class="footer-tagline">Coffee & Books · Silverthorne, Colorado</div>
+  <div class="footer-links">
+    <a href="about.html">Our Story</a>
+    <a href="menu.html">Menu</a>
+    <a href="books.html">Books</a>
+    <a href="visit.html">Hours & Location</a>
+  </div>
+  <div class="footer-copy">© 2026 Summit Grounds — The Hartley Family. All rights reserved.</div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

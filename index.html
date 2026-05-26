@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summit Grounds — Coffee & Books</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo">Summit <span>Grounds</span></a>
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="about.html" onclick="closeNav()">Our Story</a></li>
+    <li><a href="menu.html" onclick="closeNav()">Menu</a></li>
+    <li><a href="books.html" onclick="closeNav()">Books</a></li>
+    <li><a href="visit.html" onclick="closeNav()">Visit Us</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="stars"></div>
+
+  <!-- Mountain SVG -->
+  <svg class="mountains" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Back range -->
+    <path d="M0,220 L120,100 L260,180 L380,60 L520,160 L660,80 L800,170 L920,50 L1060,140 L1200,90 L1340,160 L1440,120 L1440,320 L0,320 Z" fill="#6a5058" opacity="0.7"/>
+    <!-- Snow caps -->
+    <path d="M380,60 L410,95 L355,95 Z" fill="white" opacity="0.8"/>
+    <path d="M920,50 L950,88 L892,85 Z" fill="white" opacity="0.8"/>
+    <path d="M660,80 L685,110 L635,107 Z" fill="white" opacity="0.7"/>
+    <!-- Mid range -->
+    <path d="M0,260 L80,180 L200,230 L340,150 L480,220 L600,160 L720,240 L860,175 L980,250 L1100,190 L1220,255 L1340,210 L1440,240 L1440,320 L0,320 Z" fill="#c96a52" opacity="0.85"/>
+    <!-- Foreground tree line -->
+    <path d="M0,310 L0,290 L40,270 L55,290 L90,255 L105,275 L140,260 L155,285 L200,270 L215,295 L260,280 L275,305 L320,290 L335,310 L1100,310 L1115,290 L1150,275 L1165,298 L1200,265 L1215,285 L1260,275 L1280,305 L1320,288 L1360,270 L1380,295 L1440,280 L1440,320 L0,320 Z" fill="#4a3548"/>
+  </svg>
+
+  <div class="hero-badge">Est. 2018 · Silverthorne, Colorado</div>
+  <h1>Where the <em>Mountains</em><br>Meet the Morning</h1>
+  <p class="hero-sub">A family-run coffee shop and tiny bookstore nestled in the Rockies. Pull up a chair, warm your hands, and stay a while.</p>
+  <div class="hero-cta">
+    <a href="menu.html" class="btn btn-primary">Explore Our Menu</a>
+    <a href="visit.html" class="btn btn-outline">Find Us</a>
+  </div>
+
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="container">
+    <h2>Stay in the Loop</h2>
+    <p>New book arrivals, seasonal specials, and the occasional note about what we're reading.</p>
+    <form class="newsletter-form" onsubmit="handleSubmit(event)">
+      <input type="email" placeholder="your@email.com" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Summit <span>Grounds</span></div>
+  <div class="footer-tagline">Coffee & Books · Silverthorne, Colorado</div>
+  <div class="footer-links">
+    <a href="about.html">Our Story</a>
+    <a href="menu.html">Menu</a>
+    <a href="books.html">Books</a>
+    <a href="visit.html">Hours & Location</a>
+  </div>
+  <div class="footer-copy">© 2026 Summit Grounds — The Hartley Family. All rights reserved.</div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

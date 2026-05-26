@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story — Summit Grounds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo">Summit <span>Grounds</span></a>
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="about.html" aria-current="page" onclick="closeNav()">Our Story</a></li>
+    <li><a href="menu.html" onclick="closeNav()">Menu</a></li>
+    <li><a href="books.html" onclick="closeNav()">Books</a></li>
+    <li><a href="visit.html" onclick="closeNav()">Visit Us</a></li>
+  </ul>
+</nav>
+
+<main class="page-main">
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">Rooted in the <em>Rockies</em></h2>
+        <div class="divider"></div>
+        <p>Summit Grounds was born from a simple idea: <strong>great coffee deserves a great view,</strong> and every book deserves a reader who finds it by chance.</p>
+        <p>We're the Hartley family — Marcus, Claire, and their teenage twins who've been running the register since they were tall enough to reach it. We roast our beans small-batch, bake our pastries at dawn, and hand-curate every single title on our shelves.</p>
+        <p>You'll find us tucked off Main Street in Silverthorne, with a wood-burning stove, mismatched armchairs, and a front window that looks straight up at the Ten Mile Range. Come for the espresso, stay for the chapter you didn't plan to start.</p>
+        <a href="visit.html" class="btn btn-primary" style="margin-top:1.5rem; display:inline-block;">Plan Your Visit</a>
+      </div>
+      <div class="about-illustration">
+        <div class="shop-window">
+          <div class="window-frame">
+            <svg viewBox="0 0 200 130" style="position:absolute;bottom:35%;left:0;right:0;width:100%">
+              <path d="M0,90 L40,40 L80,70 L110,25 L150,60 L180,35 L200,55 L200,130 L0,130Z" fill="#e07868"/>
+              <path d="M110,25 L125,48 L98,47Z" fill="white" opacity="0.9"/>
+              <path d="M180,35 L193,56 L168,54Z" fill="white" opacity="0.8"/>
+            </svg>
+            <div class="window-cross"></div>
+            <div class="window-cross-h"></div>
+            <div class="w-pine-tree" style="left:18%"></div>
+            <div class="w-pine-tree" style="left:30%; transform:scale(0.8)"></div>
+            <div class="w-pine-tree" style="right:20%"></div>
+            <div class="w-steam" style="bottom:28%;left:47%">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="w-coffee-cup"></div>
+            <div class="window-sill"></div>
+          </div>
+          <div class="shop-sign">Summit Grounds</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-logo">Summit <span>Grounds</span></div>
+  <div class="footer-tagline">Coffee & Books · Silverthorne, Colorado</div>
+  <div class="footer-links">
+    <a href="about.html">Our Story</a>
+    <a href="menu.html">Menu</a>
+    <a href="books.html">Books</a>
+    <a href="visit.html">Hours & Location</a>
+  </div>
+  <div class="footer-copy">© 2026 Summit Grounds — The Hartley Family. All rights reserved.</div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

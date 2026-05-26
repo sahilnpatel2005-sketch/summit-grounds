@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit Us — Summit Grounds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="index.html" class="nav-logo">Summit <span>Grounds</span></a>
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="about.html" onclick="closeNav()">Our Story</a></li>
+    <li><a href="menu.html" onclick="closeNav()">Menu</a></li>
+    <li><a href="books.html" onclick="closeNav()">Books</a></li>
+    <li><a href="visit.html" aria-current="page" onclick="closeNav()">Visit Us</a></li>
+  </ul>
+</nav>
+
+<main class="page-main">
+<section class="visit" id="visit">
+  <div class="container">
+    <span class="section-label">Come Find Us</span>
+    <h2 class="section-title">You're Always <em>Welcome</em></h2>
+    <div class="divider"></div>
+
+    <div class="visit-grid">
+      <div class="visit-card">
+        <h3><div class="visit-icon">🕐</div> Hours</h3>
+        <div class="hours-row">
+          <span class="hours-day">Monday – Friday</span>
+          <span class="hours-time">6:30 am – 6:00 pm</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Saturday</span>
+          <span class="hours-time">7:00 am – 7:00 pm</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Sunday</span>
+          <span class="hours-time">8:00 am – 5:00 pm</span>
+        </div>
+        <div class="hours-row" style="margin-top:0.5rem; border-top: 1px dashed var(--fog); padding-top:0.8rem;">
+          <span class="hours-day" style="font-style:italic; font-size:0.85rem;">Kitchen closes 30 min early</span>
+        </div>
+      </div>
+
+      <div class="visit-card">
+        <h3><div class="visit-icon">📍</div> Location</h3>
+        <div class="address-block">
+          <strong>Summit Grounds Coffee & Books</strong>
+          142 Rainbow Drive, Suite 3<br>
+          Silverthorne, CO 80498<br><br>
+          <a href="tel:+19705551847" style="color:var(--pine); text-decoration:none; font-weight:700;">(970) 555-1847</a><br>
+          <a href="mailto:hello@summitgrounds.co" style="color:var(--pine); text-decoration:none; font-size:0.9rem;">hello@summitgrounds.co</a>
+        </div>
+        <div class="map-placeholder">
+          <div class="map-pin">📍</div>
+          Silverthorne, CO
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:1rem; margin-top:2rem;">
+      <div style="background:var(--snow); border-radius:0.5rem; padding:1.2rem; text-align:center;">
+        <div style="font-size:1.6rem; margin-bottom:0.4rem;">🐾</div>
+        <div style="font-size:0.85rem; font-weight:700; color:var(--bark);">Dog Friendly</div>
+        <div style="font-size:0.78rem; color:var(--stone);">Pup cups always available</div>
+      </div>
+      <div style="background:var(--snow); border-radius:0.5rem; padding:1.2rem; text-align:center;">
+        <div style="font-size:1.6rem; margin-bottom:0.4rem;">💻</div>
+        <div style="font-size:0.85rem; font-weight:700; color:var(--bark);">Free Wi-Fi</div>
+        <div style="font-size:0.78rem; color:var(--stone);">Work-friendly vibes</div>
+      </div>
+      <div style="background:var(--snow); border-radius:0.5rem; padding:1.2rem; text-align:center;">
+        <div style="font-size:1.6rem; margin-bottom:0.4rem;">♻️</div>
+        <div style="font-size:0.85rem; font-weight:700; color:var(--bark);">Bring Your Cup</div>
+        <div style="font-size:0.78rem; color:var(--stone);">$0.50 off every time</div>
+      </div>
+      <div style="background:var(--snow); border-radius:0.5rem; padding:1.2rem; text-align:center;">
+        <div style="font-size:1.6rem; margin-bottom:0.4rem;">📚</div>
+        <div style="font-size:0.85rem; font-weight:700; color:var(--bark);">Book Trade</div>
+        <div style="font-size:0.78rem; color:var(--stone);">Bring one, take one</div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-logo">Summit <span>Grounds</span></div>
+  <div class="footer-tagline">Coffee & Books · Silverthorne, Colorado</div>
+  <div class="footer-links">
+    <a href="about.html">Our Story</a>
+    <a href="menu.html">Menu</a>
+    <a href="books.html">Books</a>
+    <a href="visit.html">Hours & Location</a>
+  </div>
+  <div class="footer-copy">© 2026 Summit Grounds — The Hartley Family. All rights reserved.</div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>
